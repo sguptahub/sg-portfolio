@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
+import { Projects } from "@/components/sections/Projects";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Projects />
         {/* Placeholder for future sections to allow scrolling */}
         <div className="h-screen w-full bg-background/50 flex items-center justify-center border-t border-white/5">
           <p className="text-muted-foreground">More content coming soon...</p>

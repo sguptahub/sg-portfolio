@@ -1,0 +1,61 @@
+Great foundation! Now add these sections:
+
+SECTION 2: FEATURED PROJECTS
+Dark background, full width
+
+Header: "Real AI Implementations, Real Business Impact"
+Subtext: "Case studies from production AI/ML programs"
+
+4 PROJECT CARDS (2x2 grid on desktop, stack on mobile):
+
+CARD 1: AGENTIC AI
+Title: "Agentic AI for SaaS Rationalization"
+Context: RingCentral | 2023-2024
+Stats:
+- $10M+ savings over 3 years
+- 300+ applications analyzed
+- 95% stakeholder agreement
+Tech: Google Vertex AI Agent Builder • GCP • Python • Multi-modal AI (Chat + Voice)
+Description: Built and operationalized enterprise-wide SaaS governance using Google Vertex AI Agent Builder. Deployed multi-modal interface (chat + voice calling) on GCP.
+CTA: [Read Full Case Study →]
+
+CARD 2: FRAUD DETECTION
+Title: "AI-Powered Fraud Detection System"
+Context: RingCentral | 2022-2024
+Stats:
+- 80% fraud reduction
+- 12 global contact centers
+- 1,000+ agents trained
+Tech: Pindrop AI Platform • AWS • Cloud Contact Center Integration
+Description: Led integration of Pindrop's AI-powered fraud detection. Partnered with solution architects on model optimization, drove global deployment and change management.
+CTA: [Read Full Case Study →]
+
+CARD 3: IOT PREDICTIVE MAINTENANCE
+Title: "AI-Driven IoT Predictive Maintenance"
+Context: Applied Materials | 2016-2020
+Stats:
+- 75% downtime reduction
+- 30-50% cost optimization
+- 99%+ customer satisfaction
+Tech: AWS IoT • ML • Edge Computing
+Description: Delivered edge AI platform analyzing sensor data for equipment failure prediction. Integrated with maintenance scheduling, achieved enterprise-scale ROI.
+CTA: [Read Full Case Study →]
+
+CARD 4: VIBE CODING LAB
+Title: "Vibe Coding: SEO Audit Tool"
+Context: Global Hackathon | 2025
+Stats:
+- Built in 4 hours
+- Zero manual coding
+- Production-ready tool
+Tech: Replit AI • Natural Language Prompts
+Description: Pioneered vibe coding to build enterprise SEO/accessibility auditor through conversational AI.
+CTAs: [Try Live Demo →] [Read Article →]
+
+Each card should have:
+- Icon at top
+- Hover effects (slight elevation, border glow)
+- Clean card design with subtle borders
+- Responsive grid layout
+
+Build this section.
