@@ -1,0 +1,200 @@
+Excellent! Now add the remaining sections:
+SECTION 3: INNOVATION LAB
+Slightly lighter background to differentiate
+
+SECTION HEADER:
+"Exploring the Future of Development"
+Subtext: "Experimenting with AI-native tools and vibe coding"
+
+2-COLUMN LAYOUT:
+
+LEFT COLUMN (60%):
+HEADLINE: "Why Vibe Coding Matters for TPMs"
+
+BODY TEXT:
+"The future of program management includes rapid prototyping, building internal tools, and creating proof-of-concepts without waiting for engineering sprints.
+
+Vibe coding—instructing AI agents to build applications through natural language—makes this possible. I'm exploring how TPMs can leverage these tools to:
+
+✓ Build dashboards and tracking tools in hours, not weeks
+✓ Create working prototypes for stakeholder alignment
+✓ Automate repetitive workflows without coding knowledge
+✓ Move from 'spec writer' to 'builder' mindset"
+
+RIGHT COLUMN (40%):
+PROJECT SHOWCASE:
+
+[Screenshot of SEO Audit Tool]
+SEO & Accessibility Auditor
+Built: 4 hours | Tech: Replit AI
+[Live Demo] [GitHub]
+
+[Screenshot of Community Platform]
+Community Connect Platform  
+Built: Cursor AI | Modern web app
+[View Project]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: MY APPROACH - The APEX-AI Framework
+Back to dark background
+
+SECTION HEADER:
+HOW I LEAD AI/GENAI PROGRAMS
+
+After shipping 5+ AI systems from pilot to production, I've developed a repeatable framework I call APEX-AI:
+
+[Visual diagram: Govern → Assess → Map → Pilot → Measure → Scale]
+
+This approach has delivered:
+- $10M+ in cost savings (SaaS rationalization)
+- 80% fraud reduction (ML-powered detection)
+- 75% downtime reduction (IoT predictive maintenance)
+
+THE FRAMEWORK IN ACTION:
+
+3-COLUMN LAYOUT (equal width cards with icons):
+
+COLUMN 1:
+ICON: [Shield icon]
+TITLE: GOVERN FIRST
+DESCRIPTION:
+Establish AI guardrails before deployment—bias detection, explainability, responsible AI practices
+
+COLUMN 2:
+ICON: [Target icon]
+TITLE: ASSESS STRATEGIC FIT
+DESCRIPTION:
+Identify use cases with 10x impact potential, not 10% improvements
+
+COLUMN 3:
+ICON: [Map icon]
+TITLE: MAP TO WORKFLOWS
+DESCRIPTION:
+Connect AI tools to actual work processes, not just "try Copilot"
+
+COLUMN 4:
+ICON: [Flask icon]
+TITLE: PILOT WITH RIGOR
+DESCRIPTION:
+30-90 day experiments with clear success criteria and phased rollout (Shadow → Supervised → Autonomous)
+
+COLUMN 5:
+ICON: [Chart icon]
+TITLE: MEASURE AT 3 LEVELS
+DESCRIPTION:
+Activity (30 days) → Project (90 days) → Organization (6-18 months)
+
+COLUMN 6:
+ICON: [Rocket icon]
+TITLE: SCALE SYSTEMATICALLY
+DESCRIPTION:
+Standardize what works, build AI literacy, embed into processes
+
+[NOTE: Display as 3x2 grid on desktop, stack on mobile]
+
+PULL QUOTE (centered below grid):
+"This approach has delivered $10M+ in cost savings, 80% fraud reduction, and 75% downtime reduction across enterprise AI programs."
+
+
+[CTA: Download APEX-AI Framework Guide]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 5: THOUGHT LEADERSHIP
+Lighter background, personal touch
+
+SECTION HEADER:
+"Contributing to the AI Discourse"
+
+GRID LAYOUT (2 columns):
+
+LEFT: PUBLISHED ARTICLES 
+- [Link icon] "The Entity and The Approach: Understanding Agentic AI" → [https://www.linkedin.com/pulse/entity-approach-simple-framework-understand-ai-agents-sanjay-hoz3c/?trackingId=6hUW2gx1T7%2BjQntLeyXzDg%3D%3D] 
+- [Link icon] "Responsible AI and Explainable AI" → [https://www.linkedin.com/pulse/responsible-ai-explainable-perfect-partnership-sanjay-gupta-pmp-csm-lfpkc/?trackingId=DTXaLbjeQHSyNHTrXM%2BYcA%3D%3D] 
+- [Link icon] "Demystifying Explainable AI" → [https://www.linkedin.com/pulse/demystifying-explainable-ai-its-role-trustworthy-gupta-pmp-csm-h4uqc/?trackingId=tQ0fA3BWSJqjBp2%2FVmBjTw%3D%3D] 
+- [Link icon] "The Rising Need for Responsible AI" → [https://www.linkedin.com/pulse/rising-need-responsible-ai-sanjay-gupta-pmp-csm-yzl9c/?trackingId=8OKDnaEXRnS%2Bd%2Bu9IREBRw%3D%3D] 
+
+[View All Articles →] (https://www.linkedin.com/in/sgupta78/recent-activity/articles/)
+
+[All links open in new tab]
+
+RIGHT: EXPERTISE AREAS
+Organized as tags/pills:
+AI/ML SPECIALIZATION:
+[Agentic AI] [GenAI/LLMs] [Vibe Coding] [Responsible AI] 
+[Explainable AI] [MLOps] [AI Governance]
+
+PROGRAM MANAGEMENT:
+[Cross-Functional Leadership] [Stakeholder Management] 
+[Risk & Issue Management] [Dependency Management]
+[Change Management] [Vendor Management]
+
+METHODOLOGIES:
+[Agile/Scrum] [SAFe] [OKRs] [Waterfall] [Hybrid]
+
+PLATFORMS & TOOLS:
+[AWS] [GCP] [Vertex AI] [Azure] [Jira] [Confluence] [monday.com]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 6: ABOUT ME
+
+Back to dark background
+
+2-COLUMN LAYOUT:
+
+LEFT COLUMN (40%):
+[PROFESSIONAL HEADSHOT]
+Use a placeholder image from path /assets/sanjay-headshot.jpg. Style: Circular crop, 300px size, with a subtle 2px emerald glowing border. Alt text: 'Sanjay Gupta - Senior Technical Program Manager'.
+
+RIGHT COLUMN (60%):
+HEADLINE: "From Builder to Leader"
+
+BODY:
+"My journey: Developer → Solution Architect → Technical Program Manager.
+
+This progression gave me something most TPMs don't have: deep technical credibility. I can architect solutions, speak engineering language, and translate complex AI systems into business outcomes.
+
+At Applied Materials and RingCentral, I've led programs spanning AI/ML, cloud transformation, IoT, and enterprise platforms—consistently delivering measurable impact through clarity, execution discipline, and stakeholder alignment.
+
+Outside tech, I apply the same endurance mindset to long-distance running as a Half-Marathon finisher. The parallels are real: pace yourself, focus on the next milestone, finish strong."
+
+CREDENTIALS SECTION (below body, same column):
+
+[Icon badges or simple list]
+
+CERTIFICATIONS:
+✓ Google Cloud Generative AI Leader (2025)
+✓ AWS Certified Solutions Architect (2018)
+✓ Certified Scrum Master - CSM (2014)
+✓ Project Management Professional - PMP (2007)
+
+EDUCATION:
+- PG Program, AI/ML - UT Austin (2020)
+- PG Diploma, Business Mgmt - IMT India
+- B.E. Electronics - MITS India
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 7: LET'S CONNECT
+Lighter background, personal touch
+
+HEADLINE:
+"Let's Connect"
+
+SUBTEXT:
+"Interested in AI/GenAI programs, enterprise transformation, or speaking opportunities? I'd love to hear from you."
+
+CONTACT OPTIONS (horizontal layout):
+[LinkedIn Profile] [Download Resume] [Email Me] [View ePortfolio]
+
+LINKS:
+- LinkedIn: https://www.linkedin.com/in/sgupta78/
+- ePortfolio: https://www.mygreatlearning.com/eportfolio/sanjay-gupta3
+- Email: reachsanjay78@gmail.com
+
+FOOTER (small text, muted):
+"Built with Replit AI using vibe coding • Deployed on Vercel • © 2025 Sanjay Gupta"
+
+Build all remaining sections. Maintain visual consistency with previous sections.

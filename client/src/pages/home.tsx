@@ -1,6 +1,11 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Projects } from "@/components/sections/Projects";
+import { InnovationLab } from "@/components/sections/InnovationLab";
+import { Approach } from "@/components/sections/Approach";
+import { ThoughtLeadership } from "@/components/sections/ThoughtLeadership";
+import { About } from "@/components/sections/About";
+import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -9,10 +14,11 @@ export default function Home() {
       <main>
         <Hero />
         <Projects />
-        {/* Placeholder for future sections to allow scrolling */}
-        <div className="h-screen w-full bg-background/50 flex items-center justify-center border-t border-white/5">
-          <p className="text-muted-foreground">More content coming soon...</p>
-        </div>
+        <InnovationLab />
+        <Approach />
+        <ThoughtLeadership />
+        <About />
+        <Contact />
       </main>
     </div>
   );
