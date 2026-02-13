@@ -3,12 +3,12 @@ import { Shield, Target, Map, FlaskConical, BarChart3, Rocket } from "lucide-rea
 import { Button } from "@/components/ui/button";
 
 const frameworkSteps = [
-  { icon: Shield, title: "GOVERN FIRST", description: "Establish AI guardrails before deployment—bias detection, explainability, responsible AI practices" },
-  { icon: Target, title: "ASSESS STRATEGIC FIT", description: "Identify use cases with 10x impact potential, not 10% improvements" },
-  { icon: Map, title: "MAP TO WORKFLOWS", description: "Connect AI tools to actual work processes, not just 'try Copilot'" },
-  { icon: FlaskConical, title: "PILOT WITH RIGOR", description: "30-90 day experiments with clear success criteria and phased rollout" },
-  { icon: BarChart3, title: "MEASURE AT 3 LEVELS", description: "Activity (30 days) → Project (90 days) → Organization (6-18 months)" },
-  { icon: Rocket, title: "SCALE SYSTEMATICALLY", description: "Standardize what works, build AI literacy, embed into processes" },
+  { icon: Shield, title: "Govern First", description: "Establish AI guardrails before deployment—bias detection, explainability, responsible AI practices" },
+  { icon: Target, title: "Assess Strategic Fit", description: "Identify use cases with 10x impact potential, not 10% improvements" },
+  { icon: Map, title: "Map to Workflows", description: "Connect AI tools to actual work processes, not just 'try Copilot'" },
+  { icon: FlaskConical, title: "Pilot with Rigor", description: "30-90 day experiments with clear success criteria and phased rollout" },
+  { icon: BarChart3, title: "Measure at 3 Levels", description: "Activity (30 days) → Project (90 days) → Organization (6-18 months)" },
+  { icon: Rocket, title: "Scale Systematically", description: "Standardize what works, build AI literacy, embed into processes" },
 ];
 
 export function Approach() {
@@ -20,12 +20,12 @@ export function Approach() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase tracking-tight"
+            className="text-3xl md:text-4xl font-bold text-white mb-4  tracking-tight"
           >
             How I Lead AI/GenAI Programs
           </motion.h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            After shipping 5+ AI systems from pilot to production, I've developed a repeatable framework I call <span className="text-emerald-400 font-bold">APEX-AI</span>:
+            After shipping 5+ AI systems from pilot to production, I've developed a repeatable framework I call <span className="text-emerald-400 font-bold">APEX-AI</span>.
           </p>
         </div>
 

@@ -39,7 +39,7 @@ export function About() {
                 My journey: <span className="text-white font-medium">Developer → Solution Architect → Technical Program Manager.</span>
               </p>
               <p>
-                This progression gave me something most TPMs don't have: <span className="text-white">deep technical credibility.</span> I can architect solutions, speak engineering language, and translate complex AI systems into business outcomes.
+                This progression gave me an edge over most TPMs: <span className="text-white">deep technical credibility.</span> I can architect solutions, speak engineering language, and translate complex AI systems into business outcomes.
               </p>
               <p>
                 At Applied Materials and RingCentral, I've led programs spanning AI/ML, cloud transformation, IoT, and enterprise platforms—consistently delivering measurable impact through clarity, execution discipline, and stakeholder alignment.

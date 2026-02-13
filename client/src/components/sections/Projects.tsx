@@ -14,7 +14,7 @@ const projects = [
   {
     id: 1,
     title: "Agentic AI for SaaS Rationalization",
-    context: "RingCentral | 2023-2024",
+    context: "RingCentral | 2022-2025",
     stats: [
       { label: "Savings", value: "$10M+" },
       { label: "Apps Analyzed", value: "300+" },
@@ -29,7 +29,7 @@ const projects = [
   {
     id: 2,
     title: "AI-Powered Fraud Detection System",
-    context: "RingCentral | 2022-2024",
+    context: "RingCentral | 2024-2025",
     stats: [
       { label: "Fraud Reduction", value: "80%" },
       { label: "Contact Centers", value: "12" },
@@ -44,7 +44,7 @@ const projects = [
   {
     id: 3,
     title: "AI-Driven IoT Predictive Maintenance",
-    context: "Applied Materials | 2016-2020",
+    context: "Applied Materials | 2019-2020",
     stats: [
       { label: "Downtime Reduction", value: "75%" },
       { label: "Cost Optimization", value: "30-50%" },
@@ -98,7 +98,7 @@ export function Projects() {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground"
           >
-            Case studies from production AI/ML programs
+            { /* Case studies from production AI/ML programs */}
           </motion.p>
         </div>
 

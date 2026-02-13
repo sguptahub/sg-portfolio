@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingDown, ChevronDown, DollarSign, Globe2 } from "lucide-react";
+import {
+  ArrowRight,
+  TrendingDown,
+  ChevronDown,
+  DollarSign,
+  Zap,
+} from "lucide-react";
 
 export function Hero() {
   const scrollTo = (id: string) => {
@@ -21,9 +27,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl md:text-[48px] font-bold tracking-tight text-white max-w-5xl mb-6 leading-[1.1]"
+          className="text-4xl md:text-[48px] font-bold tracking-tight text-foreground max-w-5xl mb-6 leading-[1.1]"
         >
-          Senior TPM Leading <span className="text-emerald-400">AI/ML Programs</span> & <br className="hidden md:block" /> Enterprise-Scale Transformations
+          Senior TPM |{" "}
+          <span className="text-emerald-400">AI & Digital Transformation</span>
         </motion.h1>
 
         <motion.p
@@ -51,7 +58,7 @@ export function Hero() {
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-white/10 bg-white/5 hover:bg-white/10 text-white h-12 px-8 rounded-full backdrop-blur-sm transition-all"
+            className="border-border bg-background/50 hover:bg-accent text-foreground h-12 px-8 rounded-full backdrop-blur-sm transition-all"
             onClick={() => scrollTo("approach")}
           >
             My Approach
@@ -59,7 +66,7 @@ export function Hero() {
           <Button 
             size="lg" 
             variant="ghost" 
-            className="text-muted-foreground hover:text-white h-12 px-8 rounded-full"
+            className="text-muted-foreground hover:text-foreground h-12 px-8 rounded-full"
             onClick={() => scrollTo("thoughts")}
           >
             Thought Leadership <ArrowRight className="ml-2 w-4 h-4" />
@@ -71,22 +78,28 @@ export function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10 w-full max-w-4xl backdrop-blur-sm"
+          className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden border border-border w-full max-w-4xl backdrop-blur-sm"
         >
           <div className="bg-background/80 p-6 flex flex-col items-center gap-2 hover:bg-background/60 transition-colors">
             <DollarSign className="w-6 h-6 text-emerald-400 mb-2" />
-            <span className="text-3xl font-bold text-white">$10M+</span>
-            <span className="text-sm text-muted-foreground font-medium uppercase tracking-wider">Cost Savings</span>
+            <span className="text-3xl font-bold text-foreground">$10M+</span>
+            <span className="text-sm text-muted-foreground font-medium uppercase tracking-wider">
+              Savings (Agentic AI)
+            </span>
           </div>
           <div className="bg-background/80 p-6 flex flex-col items-center gap-2 hover:bg-background/60 transition-colors">
             <TrendingDown className="w-6 h-6 text-emerald-400 mb-2" />
-            <span className="text-3xl font-bold text-white">80%</span>
-            <span className="text-sm text-muted-foreground font-medium uppercase tracking-wider">Fraud Reduction</span>
+            <span className="text-3xl font-bold text-foreground">80%</span>
+            <span className="text-sm text-muted-foreground font-medium uppercase tracking-wider">
+              Fraud Reduction (ML)
+            </span>
           </div>
           <div className="bg-background/80 p-6 flex flex-col items-center gap-2 hover:bg-background/60 transition-colors">
-            <Globe2 className="w-6 h-6 text-emerald-400 mb-2" />
-            <span className="text-3xl font-bold text-white">15+ Years</span>
-            <span className="text-sm text-muted-foreground font-medium uppercase tracking-wider">AI/Cloud Leadership</span>
+            <Zap className="w-6 h-6 text-emerald-400 mb-2" />
+            <span className="text-3xl font-bold text-foreground">75%</span>
+            <span className="text-sm text-muted-foreground font-medium uppercase tracking-wider">
+              Lower Downtime (ML-Driven IoT)
+            </span>
           </div>
         </motion.div>
       </div>

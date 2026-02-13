@@ -48,48 +48,49 @@
   --font-sans: 'Inter', sans-serif;
 }
 
-/* Enforcing Dark Mode Aesthetic by default */
 :root {
-  /* Deep Slate #0f172a */
-  --background: 222 47% 11%;
-  /* White #ffffff */
-  --foreground: 0 0% 100%;
-
-  /* Slightly lighter slate for cards */
-  --card: 222 47% 14%;
-  --card-foreground: 0 0% 100%;
-
-  --popover: 222 47% 11%;
-  --popover-foreground: 0 0% 100%;
-
-  /* Emerald #10b981 */
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
   --primary: 160 84% 39%;
   --primary-foreground: 0 0% 100%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222 47% 11%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 160 84% 39%;
+  --radius: 0.5rem;
+}
 
-  /* Muted Gray #94a3b8 mixed with slate */
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 0 0% 100%;
+  --card: 222 47% 14%;
+  --card-foreground: 0 0% 100%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 160 84% 39%;
+  --primary-foreground: 0 0% 100%;
   --secondary: 217 33% 17%;
   --secondary-foreground: 210 40% 98%;
-
   --muted: 217 33% 17%;
   --muted-foreground: 215 20% 65%;
-
   --accent: 217 33% 17%;
   --accent-foreground: 0 0% 100%;
-
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-
   --border: 217 33% 20%;
   --input: 217 33% 20%;
   --ring: 160 84% 39%;
-
-  --radius: 0.5rem;
-
-  --chart-1: 220 70% 50%;
-  --chart-2: 160 60% 45%;
-  --chart-3: 30 80% 55%;
-  --chart-4: 280 65% 60%;
-  --chart-5: 340 75% 55%;
 }
 
 @layer base {
@@ -97,7 +98,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-white;
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-white transition-colors duration-300;
   }
   html {
     scroll-behavior: smooth;
@@ -106,11 +107,11 @@
 
 @layer utilities {
   .glass {
-    @apply bg-background/60 backdrop-blur-md border-b border-white/5;
+    @apply bg-background/60 backdrop-blur-md border-b border-border;
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/70;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground/70;
   }
   
   .text-gradient-primary {
