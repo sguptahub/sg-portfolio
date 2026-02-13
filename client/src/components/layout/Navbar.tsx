@@ -49,7 +49,7 @@ export function Navbar() {
             </a>
           ))}
           <div className="flex items-center gap-4 ml-4">
-            <button
+            {/*}   <button
               onClick={toggleTheme}
               className="p-2 rounded-full hover:bg-white/10 text-muted-foreground hover:text-white transition-colors"
               aria-label="Toggle theme"
@@ -58,7 +58,7 @@ export function Navbar() {
             </button>
             <Button variant="outline" className="border-primary/20 hover:bg-primary/10 hover:text-primary text-primary-foreground font-medium">
               Resume
-            </Button>
+            </Button> */}
           </div>
         </div>
 
