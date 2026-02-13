@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { Link } from "wouter";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
 
 const navLinks = [
   { name: "AI Projects", href: "#projects" },
-  { name: "Innovation Lab", href: "#innovation" },
+  { name: "My Approach", href: "#approach" },
   { name: "Thought Leadership", href: "#thoughts" },
   { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },
@@ -14,15 +13,28 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const isDark = document.documentElement.classList.contains("dark");
+    setTheme(isDark ? "dark" : "light");
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center border border-primary/30">
-            <span className="font-bold text-primary text-xl">T</span>
-          </div>
-          <span className="font-semibold text-lg tracking-tight">TPM Portfolio</span>
+          <span className="font-bold text-xl tracking-tighter text-white dark:text-white light:text-slate-900">SANJAY GUPTA</span>
         </div>
 
         {/* Desktop Nav */}
@@ -36,18 +48,35 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <Button variant="outline" className="border-primary/20 hover:bg-primary/10 hover:text-primary text-primary-foreground font-medium ml-4">
-            Resume
-          </Button>
+          <div className="flex items-center gap-4 ml-4">
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full hover:bg-white/10 text-muted-foreground hover:text-white transition-colors"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <Button variant="outline" className="border-primary/20 hover:bg-primary/10 hover:text-primary text-primary-foreground font-medium">
+              Resume
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Nav Toggle */}
-        <button 
-          className="md:hidden text-muted-foreground hover:text-white"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X /> : <Menu />}
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-white/10 text-muted-foreground hover:text-white transition-colors"
+          >
+            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+          <button 
+            className="text-muted-foreground hover:text-white"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

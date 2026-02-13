@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingDown, ChevronDown, CheckCircle2, DollarSign, Globe2 } from "lucide-react";
+import { ArrowRight, TrendingDown, ChevronDown, DollarSign, Globe2 } from "lucide-react";
 
 export function Hero() {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center pt-20 overflow-hidden">
       {/* Background Gradients */}
@@ -10,24 +17,11 @@ export function Hero() {
       <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-emerald-400 mb-8"
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          Available for new opportunities
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white max-w-5xl mb-6 leading-[1.1]"
+          className="text-4xl md:text-[48px] font-bold tracking-tight text-white max-w-5xl mb-6 leading-[1.1]"
         >
           Senior TPM Leading <span className="text-emerald-400">AI/ML Programs</span> & <br className="hidden md:block" /> Enterprise-Scale Transformations
         </motion.h1>
@@ -38,7 +32,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mb-10 leading-relaxed"
         >
-          Recent impact: <span className="text-white font-medium">$10M+ savings (Agentic AI)</span> • <span className="text-white font-medium">80% fraud reduction (ML)</span> • PLM Engineering Programs (Multi-million $ budget, 50+ engineers, 3 continents)
+          Leading enterprise AI/ML programs and digital transformation at scale
         </motion.p>
 
         <motion.div
@@ -47,14 +41,28 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center gap-4 mb-16"
         >
-          <Button size="lg" className="bg-primary hover:bg-emerald-600 text-white font-semibold h-12 px-8 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all hover:scale-105">
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-emerald-600 text-white font-semibold h-12 px-8 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all hover:scale-105"
+            onClick={() => scrollTo("projects")}
+          >
             View AI Projects
           </Button>
-          <Button size="lg" variant="outline" className="border-white/10 bg-white/5 hover:bg-white/10 text-white h-12 px-8 rounded-full backdrop-blur-sm transition-all">
-            Read Case Studies
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="border-white/10 bg-white/5 hover:bg-white/10 text-white h-12 px-8 rounded-full backdrop-blur-sm transition-all"
+            onClick={() => scrollTo("approach")}
+          >
+            My Approach
           </Button>
-          <Button size="lg" variant="ghost" className="text-muted-foreground hover:text-white h-12 px-8 rounded-full">
-            LinkedIn Profile <ArrowRight className="ml-2 w-4 h-4" />
+          <Button 
+            size="lg" 
+            variant="ghost" 
+            className="text-muted-foreground hover:text-white h-12 px-8 rounded-full"
+            onClick={() => scrollTo("thoughts")}
+          >
+            Thought Leadership <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </motion.div>
 
