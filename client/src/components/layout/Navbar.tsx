@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Menu, X, Sun, Moon } from "lucide-react";
-import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -13,22 +13,6 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState("dark");
-
-  useEffect(() => {
-    const isDark = document.documentElement.classList.contains("dark");
-    setTheme(isDark ? "dark" : "light");
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
@@ -51,13 +35,6 @@ export function Navbar() {
             </a>
           ))}
           <div className="flex items-center gap-4 ml-4">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-white/10 text-muted-foreground hover:text-white transition-colors"
-              aria-label="Toggle theme"
-            >
-              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
             <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="border-primary/20 hover:bg-primary/10 hover:text-primary text-primary-foreground font-medium">
                 Resume
@@ -68,12 +45,6 @@ export function Navbar() {
 
         {/* Mobile Nav Toggle */}
         <div className="flex items-center gap-4 md:hidden">
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-white/10 text-muted-foreground hover:text-white transition-colors"
-          >
-            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
           <button
             className="text-muted-foreground hover:text-white"
             onClick={() => setIsOpen(!isOpen)}

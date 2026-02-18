@@ -5,7 +5,7 @@ import {
   TrendingDown,
   ChevronDown,
   DollarSign,
-  Globe2,
+  Zap,
 } from "lucide-react";
 
 export function Hero() {
@@ -95,8 +95,8 @@ export function Hero() {
             </span>
           </div>
           <div className="bg-background/80 p-6 flex flex-col items-center gap-2 hover:bg-background/60 transition-colors">
-            <Globe2 className="w-6 h-6 text-emerald-400 mb-2" />
-            <span className="text-3xl font-bold text-white">75%</span>
+            <Zap className="w-6 h-6 text-emerald-400 mb-2" />
+            <span className="text-3xl font-bold text-foreground">75%</span>
             <span className="text-sm text-muted-foreground font-medium uppercase tracking-wider">
               Lower Downtime (ML-Driven IoT)
             </span>
