@@ -10,6 +10,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+import { Link } from "wouter";
+
 const projects = [
   {
     id: 1,
@@ -24,12 +26,13 @@ const projects = [
     description: "Built and operationalized enterprise-wide SaaS governance using Google Vertex AI Agent Builder. Deployed multi-modal interface (chat + voice calling) on GCP.",
     icon: Bot,
     cta: "Read Full Case Study",
+    slug: "saas-governance",
     color: "from-emerald-500/20 to-emerald-500/0"
   },
   {
     id: 2,
     title: "AI-Powered Fraud Detection System",
-    context: "RingCentral | 2024-2025",
+    context: "RingCentral | 2022-2024",
     stats: [
       { label: "Fraud Reduction", value: "80%" },
       { label: "Contact Centers", value: "12" },
@@ -39,12 +42,13 @@ const projects = [
     description: "Led integration of Pindrop's AI-powered fraud detection. Partnered with solution architects on model optimization, drove global deployment and change management.",
     icon: ShieldAlert,
     cta: "Read Full Case Study",
+    slug: "fraud-detection",
     color: "from-blue-500/20 to-blue-500/0"
   },
   {
     id: 3,
     title: "AI-Driven IoT Predictive Maintenance",
-    context: "Applied Materials | 2019-2020",
+    context: "Applied Materials | 2016-2020",
     stats: [
       { label: "Downtime Reduction", value: "75%" },
       { label: "Cost Optimization", value: "30-50%" },
@@ -54,6 +58,7 @@ const projects = [
     description: "Delivered edge AI platform analyzing sensor data for equipment failure prediction. Integrated with maintenance scheduling, achieved enterprise-scale ROI.",
     icon: Settings,
     cta: "Read Full Case Study",
+    slug: "iot-maintenance",
     color: "from-purple-500/20 to-purple-500/0"
   },
   {
@@ -150,9 +155,17 @@ export function Projects() {
                 </div>
 
                 <div className="flex flex-wrap items-center gap-4">
-                  <Button variant="link" className="p-0 h-auto text-emerald-400 hover:text-emerald-300 group/btn font-semibold">
-                    {project.cta} <ArrowUpRight className="ml-1 w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                  </Button>
+                  {project.slug ? (
+                    <Link href={`/case-study/${project.slug}`}>
+                      <Button variant="link" className="p-0 h-auto text-emerald-400 hover:text-emerald-300 group/btn font-semibold">
+                        {project.cta} <ArrowUpRight className="ml-1 w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button variant="link" className="p-0 h-auto text-emerald-400 hover:text-emerald-300 group/btn font-semibold">
+                      {project.cta} <ArrowUpRight className="ml-1 w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                    </Button>
+                  )}
                   {project.secondaryCta && (
                     <Button variant="link" className="p-0 h-auto text-muted-foreground hover:text-white group/btn text-sm">
                       {project.secondaryCta} <ExternalLink className="ml-1 w-3 h-3" />

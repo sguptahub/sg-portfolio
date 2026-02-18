@@ -37,9 +37,11 @@ export function Contact() {
               <Mail className="w-5 h-5 mr-3" /> Email Me
             </Button>
           </a>
-          <Button variant="outline" size="lg" className="rounded-full bg-white/5 border-white/10 hover:bg-white/10 hover:text-emerald-400 h-14 px-8">
-            <FileText className="w-5 h-5 mr-3" /> Download Resume
-          </Button>
+          <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="lg" className="rounded-full bg-white/5 border-white/10 hover:bg-white/10 hover:text-emerald-400 h-14 px-8">
+              <FileText className="w-5 h-5 mr-3" /> Download Resume
+            </Button>
+          </a>
           <a href="https://www.mygreatlearning.com/eportfolio/sanjay-gupta3" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="lg" className="rounded-full bg-white/5 border-white/10 hover:bg-white/10 hover:text-emerald-400 h-14 px-8">
               <Globe className="w-5 h-5 mr-3" /> View ePortfolio

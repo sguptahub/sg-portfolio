@@ -16,9 +16,9 @@ export function About() {
               <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full blur opacity-40 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-2 border-emerald-500/50">
                 <img 
-                  src="/assets/sanjay-headshot.jpg" 
+                  src="/assets/profile.jpg" 
                   alt="Sanjay Gupta - Senior Technical Program Manager"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover transition-all duration-500"
                   onError={(e) => {
                     e.currentTarget.src = "https://api.dicebear.com/7.x/avataaars/svg?seed=Sanjay";
                   }}

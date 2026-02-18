@@ -34,7 +34,9 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-bold text-xl tracking-tighter text-white dark:text-white light:text-slate-900">SANJAY GUPTA</span>
+          <span className="font-bold text-xl tracking-tighter text-white dark:text-white light:text-slate-900">
+            SANJAY GUPTA
+          </span>
         </div>
 
         {/* Desktop Nav */}
@@ -49,16 +51,18 @@ export function Navbar() {
             </a>
           ))}
           <div className="flex items-center gap-4 ml-4">
-            {/*}   <button
+            <button
               onClick={toggleTheme}
               className="p-2 rounded-full hover:bg-white/10 text-muted-foreground hover:text-white transition-colors"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <Button variant="outline" className="border-primary/20 hover:bg-primary/10 hover:text-primary text-primary-foreground font-medium">
-              Resume
-            </Button> */}
+            <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-primary/20 hover:bg-primary/10 hover:text-primary text-primary-foreground font-medium">
+                Resume
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -70,7 +74,7 @@ export function Navbar() {
           >
             {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          <button 
+          <button
             className="text-muted-foreground hover:text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -81,7 +85,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden absolute top-20 left-0 right-0 bg-background border-b border-white/5 p-6 flex flex-col gap-4"
