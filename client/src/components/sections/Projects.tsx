@@ -73,8 +73,10 @@ const projects = [
     tech: "Replit AI • Natural Language Prompts",
     description: "Pioneered vibe coding to build enterprise SEO/accessibility auditor through conversational AI.",
     icon: Zap,
-    cta: "Try Live Demo",
-    secondaryCta: "Read Article",
+    cta: "Read Case Study",
+    slug: "vibe-coding",
+    secondaryCta: "Watch Demo",
+    secondarySlug: "/demo",
     color: "from-amber-500/20 to-amber-500/0"
   }
 ];
@@ -167,9 +169,11 @@ export function Projects() {
                     </Button>
                   )}
                   {project.secondaryCta && (
-                    <Button variant="link" className="p-0 h-auto text-muted-foreground hover:text-white group/btn text-sm">
-                      {project.secondaryCta} <ExternalLink className="ml-1 w-3 h-3" />
-                    </Button>
+                    <Link href={project.secondarySlug || "#"}>
+                      <Button variant="link" className="p-0 h-auto text-muted-foreground hover:text-white group/btn text-sm">
+                        {project.secondaryCta} <ExternalLink className="ml-1 w-3 h-3" />
+                      </Button>
+                    </Link>
                   )}
                 </div>
               </div>
