@@ -22,7 +22,7 @@ export function Contact() {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground max-w-2xl"
           >
-            Interested in AI/GenAI programs, enterprise transformation, or speaking opportunities? I'd love to hear from you.
+            Interested in AI/GenAI programs, enterprise transformation, or collaboration? I'd love to hear from you.
           </motion.p>
         </div>
 
@@ -51,7 +51,7 @@ export function Contact() {
 
         <div className="text-center pt-12 border-t border-white/5">
           <p className="text-sm text-muted-foreground/60">
-            Built with Replit AI using vibe coding • Deployed on Vercel • © 2025 Sanjay Gupta
+            Built with Replit AI using vibe coding • © 2026 Sanjay Gupta
           </p>
         </div>
       </div>

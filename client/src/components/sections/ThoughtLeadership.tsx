@@ -16,7 +16,7 @@ const skillGroups = [
   },
   {
     title: "PROGRAM MANAGEMENT",
-    skills: ["Cross-Functional Leadership", "Stakeholder Management", "Risk & Issue Management", "Dependency Management", "Change Management", "Vendor Management"]
+    skills: ["Program Strategy & Roadmapping", "Governance & Compliance", "Executive Communication & Influence", "Resource & Budget Management", "Stakeholder Management", "Risk & Issue Management", "Dependency Management", "Change Management", "Vendor Management"]
   },
   {
     title: "METHODOLOGIES",
@@ -24,7 +24,7 @@ const skillGroups = [
   },
   {
     title: "PLATFORMS & TOOLS",
-    skills: ["AWS", "GCP", "Vertex AI", "Azure", "Jira", "Confluence", "monday.com"]
+    skills: ["AWS", "GCP", "Vertex AI Agent Builder", "Azure", "Jira", "Confluence", "monday.com", "Smartsheet"]
   }
 ];
 

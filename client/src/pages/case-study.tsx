@@ -46,7 +46,7 @@ const caseStudies = {
   "fraud-detection": {
     title: "AI-Powered Fraud Detection Across Global Contact Centers",
     company: "RingCentral",
-    period: "2022–2024",
+    period: "2024–2025",
     context: "Escalating fraud losses with 24–48 hour detection lag across 12 global contact centers serving 1,000+ agents",
     impact: [
       { label: "Fraud Reduction (6 mo)", value: "80%", icon: Shield },
@@ -249,7 +249,7 @@ export default function CaseStudy({ params }: CaseStudyProps) {
 
       <footer className="py-12 border-t border-white/5 bg-slate-900/40">
         <div className="container mx-auto px-6 text-center text-sm text-muted-foreground/60">
-          Built with Replit AI • © 2025 Sanjay Gupta
+          Built with Replit AI • © 2026 Sanjay Gupta
         </div>
       </footer>
     </div>

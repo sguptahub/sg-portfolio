@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { name: "AI Projects", href: "#projects" },
-  { name: "My Approach", href: "#approach" },
+  { name: "APEX-AI Framework", href: "#approach" },
   { name: "Thought Leadership", href: "#thoughts" },
   { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },

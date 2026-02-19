@@ -32,7 +32,7 @@ const projects = [
   {
     id: 2,
     title: "AI-Powered Fraud Detection System",
-    context: "RingCentral | 2022-2024",
+    context: "RingCentral | 2024-2025",
     stats: [
       { label: "Fraud Reduction", value: "80%" },
       { label: "Contact Centers", value: "12" },
@@ -48,7 +48,7 @@ const projects = [
   {
     id: 3,
     title: "AI-Driven IoT Predictive Maintenance",
-    context: "Applied Materials | 2016-2020",
+    context: "Applied Materials | 2019-2020",
     stats: [
       { label: "Downtime Reduction", value: "75%" },
       { label: "Cost Optimization", value: "30-50%" },
@@ -66,7 +66,7 @@ const projects = [
     title: "Vibe Coding: SEO Audit Tool",
     context: "Global Hackathon | 2025",
     stats: [
-      { label: "Build Time", value: "4 Hours" },
+      { label: "Build Time", value: "8 Hours" },
       { label: "Manual Coding", value: "Zero" },
       { label: "Status", value: "Production" }
     ],
