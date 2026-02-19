@@ -15,7 +15,7 @@ import { Link } from "wouter";
 const projects = [
   {
     id: 1,
-    title: "Agentic AI for SaaS Rationalization",
+    title: "Agentic AI-Powered SaaS Governance",
     context: "RingCentral | 2022-2025",
     stats: [
       { label: "Savings", value: "$10M+" },

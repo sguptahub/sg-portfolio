@@ -44,9 +44,9 @@ export function Approach() {
             </div>
 
             <a href="/assets/APEX-AI-Framework-Guide.docx" download>
-              <Button size="lg" className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-full h-14 font-bold shadow-lg shadow-emerald-500/20 transition-all hover:scale-[1.02]">
+              {/*   <Button size="lg" className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-full h-14 font-bold shadow-lg shadow-emerald-500/20 transition-all hover:scale-[1.02]">
                 <Download className="mr-2 w-5 h-5" /> Download Framework Guide
-              </Button>
+              </Button> */}
             </a>
           </motion.div>
 
