@@ -9,35 +9,38 @@ interface CaseStudyProps {
 
 const caseStudies = {
   "saas-governance": {
-    title: "Enterprise SaaS Governance & AI-Driven Rationalization",
+    title: "Enterprise SaaS Governance & Agentic AI-Driven Rationalization",
     company: "RingCentral",
     period: "2022–2025",
     context: "300+ SaaS applications with no centralized visibility, redundancy, or cost control",
     impact: [
-      { label: "Savings", value: "$10M+", icon: TrendingDown },
+      { label: "Cost Savings (3 Years)", value: "$10M+", icon: TrendingDown },
       { label: "Apps Eliminated", value: "40–50", icon: CheckCircle2 },
       { label: "Stakeholder Agreement", value: "95%", icon: Globe },
-      { label: "Assessment Time", value: "4 mo", icon: Clock }
+      { label: "Apps Reviewed", value: "300+", icon: Clock }
     ],
-    challenge: "RingCentral had accumulated 300+ SaaS applications across departments with no governance. Individual teams purchased tools independently, creating duplicate functionality, unnecessary spend, and security gaps. Manual portfolio assessment would take 6+ months and be outdated on completion. App owners resisted rationalization.",
-    role: "I was assigned to design and operationalize this program from scratch. I built the governance framework (review process, approval criteria, escalation paths), established two governance councils (DRI Council for departments, Governance Council for high-spend reviews), secured CXO/SVP buy-in across Finance, IT, Security, Legal, and Innovation, and oversaw the Agentic AI solution to accelerate the initial assessment.",
+    challenge: "RingCentral had accumulated 300+ SaaS applications across departments with no governance. Individual teams purchased tools independently, creating duplicate functionality, unnecessary spend, and security gaps. Applications were renewed without business justification or rationalization review. App owners resisted change and elimination discussions.",
+    role: "I was assigned to design and operationalize this program from scratch. I built the governance framework (review process, approval criteria, escalation paths), established two governance councils (DRI Council for departments, Governance Council for high-spend reviews), secured CXO/SVP buy-in across Finance, IT, Security, Legal, and Innovation, and deployed an Agentic AI solution to accelerate the initial rationalization assessment for each application.",
     solution: [
-      "Built governance framework: standardized review process, business case templates, escalation paths documented in project wiki",
+      "Built governance framework: applications reviewed 6 months (if ACV < $250K) or 9 months (if ACV ≥ $250K) before renewal to optimize cost, consolidate licenses, or plan elimination roadmap",
+      "Standardized review process: business case templates, escalation paths, all documented in project wiki for transparency",
       "Established DRI Council (senior reps per dept) and Governance Council (exec reviews for high-spend apps)",
-      "Deployed Agentic AI on Google Vertex AI Agent Builder: integrated 5 data sources (HRIS, Finance, Procurement, SSO, Support) with RAG architecture for explainable recommendations",
-      "Multi-modal interface: web chat + voice calling option for stakeholder accessibility",
-      "Human-in-the-loop: all AI recommendations reviewed by governance councils before action",
-      "Integrated Security team compliance checks (SSO/MFA, supply chain training), Finance business case template, and Data Privacy reviews into the process",
+      "Deployed Agentic AI on Google Vertex AI Agent Builder as pre-council assessment tool: analyzed usage patterns using master application database to identify rationalization opportunities, replacement candidates, or cheaper alternatives",
+      "AI provided initial recommendations with explainable rationale before applications went to human council review — accelerating prep and improving recommendation quality",
+      "Multi-modal AI interface: web chat + voice calling option for stakeholder accessibility",
+      "Human-in-the-loop: all AI recommendations reviewed by governance councils before final decisions",
+      "Integrated Security team compliance checks (SSO/MFA, supply chain training), and Finance business case template into the process",
       "Automated renewal calendar and escalation path (manager → skip-level) — 80% reduction in last-minute escalations"
     ],
-    tech: ["Vertex AI Agent Builder", "GCP", "GPT-4", "LangChain", "Pinecone", "RAG", "Python"],
+    tech: ["Vertex AI Agent Builder", "GCP", "Prompt Engineering", "Cloud Storage", "RAG", "Python"],
     results: [
-      "$10M+ in OpEx savings over 3 years through application consolidation",
+      "$10M+ in OpEx savings over 3 years through application consolidation and license optimization",
       "40–50 applications eliminated with stakeholder agreement",
-      "Assessment completed in 4 months vs. 6+ months for manual approach",
-      "95% stakeholder agreement on AI recommendations vs. 60% for manual review decks",
-      "Governance framework extended beyond cost optimization — now serves Security, Finance, and Data Privacy org-wide",
-      "80% reduction in renewal escalations through automated calendar and notification system"
+      "300+ applications reviewed through the governance process with AI-accelerated assessment",
+      "95% stakeholder agreement on AI recommendations — improved credibility of rationalization proposals through data-backed analysis",
+      "Governance framework extended beyond cost optimization — now serves Security and Finance org-wide",
+      "80% reduction in renewal escalations through automated calendar and notification system",
+      "Applications continue through review cycles at each renewal — sustained governance discipline, not a one-time cleanup"
     ]
   },
   "fraud-detection": {
@@ -46,61 +49,61 @@ const caseStudies = {
     period: "2022–2024",
     context: "Escalating fraud losses with 24–48 hour detection lag across 12 global contact centers serving 1,000+ agents",
     impact: [
-      { label: "Fraud Reduction", value: "80%", icon: Shield },
+      { label: "Fraud Reduction (6 mo)", value: "80%", icon: Shield },
       { label: "Detection Time", value: "Real-time", icon: Zap },
       { label: "Agents Trained", value: "1,000+", icon: CheckCircle2 },
       { label: "ROI Achieved", value: "Q1", icon: BarChart3 }
     ],
-    challenge: "RingCentral's global contact centers had no real-time fraud detection. Manual review took 24–48 hours — by which time losses had occurred. With 1,000+ agents across 12 centers, the problem scaled with the business. Build vs. buy: custom model development would take 12+ months. Change management would be the harder challenge — any alert system would disrupt trained agent workflows.",
-    role: "I led the full program lifecycle: evaluated 3 fraud detection platforms, selected Pindrop, partnered with their solution architects to optimize for RingCentral's fraud patterns, architected the phased global deployment (Pilot → Regional → Global), owned change management for 1,000+ agents, and established KPI frameworks and feedback loops for continuous model improvement.",
+    challenge: "RingCentral's global contact centers faced escalating fraud losses with no real-time detection capability. Manual review took 24–48 hours — by which time significant losses had already occurred. With 1,000+ agents across 12 centers, the problem scaled with the business. Change management would be the critical challenge — any alert system would disrupt trained agent workflows and require trust-building before adoption.",
+    role: "Fraud management leadership had already identified Pindrop as the vendor solution. I led the full program execution from that point forward: partnered with Pindrop solution architects to optimize models for RingCentral's specific fraud patterns, architected the phased global deployment strategy (Pilot → Regional → Global), owned change management for 1,000+ agents, and established KPI frameworks and feedback loops for continuous model improvement.",
     solution: [
-      "Vendor evaluation: assessed 3 platforms on AI accuracy, real-time capability, cloud integration, contact center deployment history",
-      "Solution architecture: partnered with Pindrop to tune models for RingCentral-specific fraud patterns; integrated AWS-deployed platform with RingCentral's cloud contact center infrastructure",
-      "Real-time fraud scoring during live calls — not post-call analysis",
-      "Phased rollout: Pilot (2 centers) → Regional (6 centers) → Global (12 centers)",
+      "Solution architecture partnership: worked closely with Pindrop solution architects to tune ML models for RingCentral-specific fraud patterns rather than using generic contact center configurations",
+      "Integration engineering: connected Pindrop's AWS-deployed ML platform with RingCentral's cloud contact center infrastructure for real-time fraud scoring during live calls — not post-call analysis",
+      "Phased rollout strategy: Pilot (2 centers) → Regional (6 centers) → Global (12 centers) with validation gates at each phase",
       "Change management: developed agent playbooks for fraud alert scenarios, trained supervisors on escalation protocols before agent rollout, published fraud reduction metrics by center to drive adoption",
-      "Feedback loops: agent outcomes fed back to Pindrop for model tuning — continuous accuracy improvement"
+      "KPI framework: established baseline fraud metrics, model accuracy benchmarks, and feedback loops with Pindrop for continuous model tuning based on real fraud signal data",
+      "Adoption metrics tracking: monitored agent usage, alert response times, and escalation quality per center to identify coaching opportunities"
     ],
     tech: ["Pindrop AI Platform", "AWS", "RingCentral Contact Center", "Real-time Analytics", "ML Optimization"],
     results: [
       "80% reduction in fraud incidents within 6 months of global launch",
-      "Detection time reduced from 24–48 hours to real-time during live calls",
-      "1,000+ agents trained with 95% adoption in 3 months",
-      "Zero production incidents across phased global rollout",
+      "Detection time reduced from 24–48 hours to real-time during live calls — preventing losses, not just identifying them after the fact",
+      "1,000+ agents trained with 95% adoption achieved within 3 months",
+      "Zero production incidents across phased global rollout — pilot validation and regional learnings prevented issues at scale",
       "Measurable ROI achieved within first quarter of deployment",
-      "KPI framework and feedback loops now serve as continuous improvement infrastructure"
+      "KPI framework and feedback loops now serve as continuous improvement infrastructure for fraud operations"
     ]
   },
   "iot-maintenance": {
     title: "AI-Driven IoT Predictive Maintenance Platform",
     company: "Applied Materials",
-    period: "2016–2020",
-    context: "Unplanned equipment downtime causing production delays and 30–50% higher operational costs across global manufacturing",
+    period: "2019–2020",
+    context: "Unplanned equipment downtime causing production delays and 30–50% higher operational costs across global manufacturing labs",
     impact: [
       { label: "Downtime Reduction", value: "75%", icon: Zap },
       { label: "Cost Reduction", value: "30-50%", icon: TrendingDown },
-      { label: "Connected Systems", value: "100+", icon: Globe },
+      { label: "Systems Per Lab", value: "100+", icon: Globe },
       { label: "ROI Achieved", value: "12 mo", icon: BarChart3 }
     ],
-    challenge: "Applied Materials' global semiconductor manufacturing facilities operated on reactive maintenance. Equipment failures were discovered after they occurred, causing unplanned downtime and production delays. Operational costs were 30–50% higher than a predictive model would require. Equipment failure signals existed in sensor data but weren't captured or analyzed at scale across 100+ connected systems globally.",
-    role: "I led the end-to-end program: partnered with data science on ML model development for failure prediction, architected the edge computing infrastructure for real-time sensor analysis, established MLOps framework (automated retraining, A/B testing, performance monitoring), integrated predictions with maintenance scheduling systems, and managed global deployment coordination across 50+ engineers in USA, Asia, and Europe.",
+    challenge: "Applied Materials' global semiconductor manufacturing labs operated on reactive maintenance. Equipment failures were discovered after they occurred, causing unplanned downtime and production delays. Operational costs were 30–50% higher than a predictive model would require. Equipment failure signals existed in sensor data but weren't captured or analyzed at scale. Each lab had 100+ connected systems generating sensor data with no centralized analysis infrastructure.",
+    role: "I led the end-to-end program: partnered with data science on ML model development for failure prediction, architected the cloud-based analytics platform for sensor data ingestion and analysis, established MLOps framework (automated retraining, A/B testing, performance monitoring), integrated predictions with maintenance scheduling systems, and managed global deployment coordination across 50+ engineers in USA, Asia, and Europe.",
     solution: [
-      "Edge AI + Cloud ML: Real-Time Prediction at Manufacturing Scale",
+      "Sensor data collection: IoT sensors at lab facilities collected equipment health signals; data transmitted to AWS cloud for centralized analysis",
       "ML model development: partnered with data science to build failure prediction models using historical sensor data; validated accuracy against historical failure events before production",
-      "Edge architecture: deployed edge computing nodes at each facility for real-time sensor analysis with sub-second alert latency",
-      "Cloud ML platform: Amazon SageMaker for model training, A/B testing, and automated retraining on new failure data",
-      "MLOps framework: automated retraining pipeline, performance monitoring, data drift detection",
-      "Maintenance integration: connected failure predictions with scheduling systems and alerting mechanisms",
-      "Global deployment: coordinated 50+ engineers across USA, Asia, Europe through phased rollout"
+      "Cloud analytics platform: Amazon SageMaker for ML model training, inference, and A/B testing; AWS IoT Core for sensor data ingestion from 100+ systems per lab across multiple global facilities",
+      "MLOps framework: automated retraining pipeline on new failure data, performance monitoring, data drift detection — the platform became more accurate over time",
+      "Real-time alerting: cloud-based analysis generated predictions and alerts transmitted back to facility maintenance teams with defined escalation workflows",
+      "Maintenance integration: connected failure predictions with scheduling systems; trained operations teams on predictive workflows",
+      "Global deployment: coordinated engineering teams across USA, Asia, Europe through phased rollout; facility-level validation before go-live"
     ],
-    tech: ["AWS IoT Core", "Amazon SageMaker", "Edge Computing", "Python", "Lambda", "MLOps"],
+    tech: ["AWS IoT Core", "Amazon SageMaker", "Python", "Lambda", "Real-time Analytics"],
     results: [
-      "75% reduction in unplanned equipment downtime across global manufacturing facilities",
-      "30–50% operational cost reduction — maintenance scheduled proactively",
+      "75% reduction in unplanned equipment downtime across global manufacturing labs",
+      "30–50% operational cost reduction — maintenance scheduled proactively, not driven by failures",
       "ROI achieved within 12 months of production deployment",
-      "99%+ customer satisfaction through shift from reactive to proactive maintenance",
-      "Scalable platform supporting 100+ connected systems",
-      "Platform architecture reusable across additional equipment types"
+      "99%+ customer satisfaction through shift from reactive to proactive maintenance experience",
+      "Scalable cloud platform supporting 100+ connected systems per lab across multiple global facilities with continuous model improvement",
+      "Platform architecture reusable across additional equipment types and new lab facilities — foundation for ongoing IoT expansion"
     ]
   },
   "vibe-coding": {

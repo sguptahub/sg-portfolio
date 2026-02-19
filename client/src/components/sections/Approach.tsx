@@ -1,74 +1,89 @@
 import { motion } from "framer-motion";
-import { Shield, Target, Map, FlaskConical, BarChart3, Rocket } from "lucide-react";
+import { Shield, Target, Map, FlaskConical, BarChart3, Rocket, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const frameworkSteps = [
-  { icon: Shield, title: "Govern First", description: "Establish AI guardrails before deployment—bias detection, explainability, responsible AI practices" },
-  { icon: Target, title: "Assess Strategic Fit", description: "Identify use cases with 10x impact potential, not 10% improvements" },
-  { icon: Map, title: "Map to Workflows", description: "Connect AI tools to actual work processes, not just 'try Copilot'" },
-  { icon: FlaskConical, title: "Pilot with Rigor", description: "30-90 day experiments with clear success criteria and phased rollout" },
-  { icon: BarChart3, title: "Measure at 3 Levels", description: "Activity (30 days) → Project (90 days) → Organization (6-18 months)" },
-  { icon: Rocket, title: "Scale Systematically", description: "Standardize what works, build AI literacy, embed into processes" },
+  { icon: Target, title: "1. ASSESS", description: "Identify use cases with 10x impact potential, not 10% improvements. Find where AI actually matters." },
+  { icon: Map, title: "2. MAP", description: "Connect tools to workflows. Define which tool for which task and where AI assists vs. executes." },
+  { icon: FlaskConical, title: "3. PILOT", description: "Run focused 30-90 day experiments with clear success criteria (Shadow → Supervised → Autonomous)." },
+  { icon: BarChart3, title: "4. MEASURE", description: "Track impact across 3 levels: Activity (30 days), Project (90 days), and Organization (6-18 months)." },
+  { icon: Rocket, title: "5. SCALE", description: "Standardize what works, build AI literacy, and embed AI into the default operating model." },
 ];
 
 export function Approach() {
   return (
-    <section id="approach" className="py-24 bg-background relative">
+    <section id="approach" className="py-20 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mb-16">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+        <div className="flex flex-col lg:flex-row gap-16 items-start">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-white mb-4  tracking-tight"
+            className="lg:w-1/3"
           >
-            How I Lead AI/GenAI Programs
-          </motion.h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            After shipping 5+ AI systems from pilot to production, I've developed a repeatable framework I call <span className="text-emerald-400 font-bold">APEX-AI</span>.
-          </p>
-        </div>
-
-        {/* Visual Diagram Placeholder */}
-        <div className="mb-20 py-12 px-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 flex flex-wrap justify-center items-center gap-4 md:gap-8">
-          {["Govern", "Assess", "Map", "Pilot", "Measure", "Scale"].map((step, i) => (
-            <div key={step} className="flex items-center gap-4 md:gap-8">
-              <div className="flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold">
-                  {i + 1}
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 uppercase tracking-tight">
+              The <span className="text-emerald-400">APEX-AI</span> Framework
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              My signature execution-driven framework for moving organizations from AI experimentation to measurable business outcomes.
+            </p>
+            
+            <div className="p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 mb-8">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-emerald-400" />
                 </div>
-                <span className="mt-2 text-xs font-bold text-white uppercase tracking-widest">{step}</span>
+                <div>
+                  <h3 className="text-xl font-bold text-white tracking-tight">GOVERN</h3>
+                  <p className="text-xs text-emerald-400/80 font-bold uppercase tracking-widest">The Foundation</p>
+                </div>
               </div>
-              {i < 5 && <div className="hidden md:block w-12 h-px bg-white/10" />}
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Establish AI guardrails first—Security, Ethics, Risk, and Compliance. Governance enables execution by building trust.
+              </p>
             </div>
-          ))}
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-          {frameworkSteps.map((step, index) => (
+            <a href="/assets/APEX-AI-Framework-Guide.docx" download>
+              <Button size="lg" className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-full h-14 font-bold shadow-lg shadow-emerald-500/20 transition-all hover:scale-[1.02]">
+                <Download className="mr-2 w-5 h-5" /> Download Framework Guide
+              </Button>
+            </a>
+          </motion.div>
+
+          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {frameworkSteps.map((step, index) => (
+              <motion.div
+                key={step.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-emerald-500/30 transition-all group"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-emerald-500/10 transition-colors">
+                    <step.icon className="w-5 h-5 text-emerald-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-2 tracking-tight uppercase">{step.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+            
             <motion.div
-              key={step.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-emerald-500/30 transition-all"
+              transition={{ delay: 0.5 }}
+              className="md:col-span-2 p-8 rounded-2xl bg-emerald-500/5 border border-dashed border-emerald-500/20 text-center"
             >
-              <step.icon className="w-8 h-8 text-emerald-400 mb-6" />
-              <h3 className="text-xl font-bold text-white mb-3 tracking-tight">{step.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+              <p className="text-white/90 italic text-lg leading-relaxed">
+                "This framework moves organizations from 'AI assisted' to 'Autonomous Agents' with disciplined execution."
+              </p>
             </motion.div>
-          ))}
-        </div>
-
-        <div className="flex flex-col items-center text-center">
-          <blockquote className="max-w-4xl text-2xl md:text-3xl font-medium text-white/90 italic mb-12 leading-relaxed">
-            "This approach has delivered <span className="text-emerald-400">$10M+ in cost savings</span>, <span className="text-emerald-400">80% fraud reduction</span>, and <span className="text-emerald-400">75% downtime reduction</span> across enterprise AI programs."
-          </blockquote>
-          
-          <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full px-10 h-14 font-bold shadow-lg shadow-emerald-500/20">
-            Download APEX-AI Framework Guide
-          </Button>
+          </div>
         </div>
       </div>
     </section>
