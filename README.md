@@ -32,16 +32,18 @@ A professional portfolio for a Senior Technical Program Manager specializing in 
 To deploy this project on Vercel:
 
 1. **Root Directory:** Set this to the project root (where `package.json` is located), **NOT** the `client` folder.
-2. **Build Command:** `npm run build` (which runs `vite build`)
-3. **Output Directory:** `dist/public` (Vite is configured to build into this directory)
+2. **Build Command:** `npm run build`
+3. **Output Directory:** `dist/public`
 4. **Install Command:** `npm install`
+
+The project includes a `vercel.json` file that handles these settings automatically. If the page is blank, ensure the **Output Directory** in Vercel settings is explicitly set to `dist/public`.
 
 ### 🛠️ Manual Deployment Commands
 
 If you are pushing via CLI:
 ```bash
 git add .
-git commit -m "Configure Vercel deployment"
+git commit -m "Fix Vercel blank page issue"
 git push origin main
 ```
 
