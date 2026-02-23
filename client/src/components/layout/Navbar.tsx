@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { name: "AI Projects", href: "#projects" },
+  { name: "Flagship Programs", href: "#projects" },
   { name: "APEX-AI Framework", href: "#approach" },
   { name: "Thought Leadership", href: "#thoughts" },
   { name: "About", href: "#about" },

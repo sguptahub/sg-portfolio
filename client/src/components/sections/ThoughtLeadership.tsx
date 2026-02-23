@@ -24,7 +24,7 @@ const skillGroups = [
   },
   {
     title: "PLATFORMS & TOOLS",
-    skills: ["AWS", "GCP", "Vertex AI Agent Builder", "Azure", "Jira", "Confluence", "monday.com", "Smartsheet"]
+    skills: ["AWS", "GCP", "Vertex AI Agent Builder", "Azure", "Jira", "Confluence", "monday.com", "Smartsheet", "Replit AI", "Cursor AI"]
   }
 ];
 
