@@ -39,7 +39,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mb-10 leading-relaxed"
         >
-          Leading enterprise AI/ML programs and digital transformation at scale
+          Leading enterprise AI and GenAI-driven cloud and digital transformation programs at scale.
         </motion.p>
         {/* 
         <motion.div

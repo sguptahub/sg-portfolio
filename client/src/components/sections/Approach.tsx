@@ -25,7 +25,7 @@ export function Approach() {
               The <span className="text-emerald-400">APEX-AI</span> Framework
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              My signature execution-driven framework for moving organizations from AI experimentation to measurable business outcomes.
+              After leading multiple AI programs from pilot to production, I developed APEX-AI, a structured execution framework that turns experimentation into measurable enterprise value.
             </p>
             
             <div className="p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 mb-8">
