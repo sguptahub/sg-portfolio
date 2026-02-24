@@ -238,9 +238,9 @@ export default function CaseStudy({ params }: CaseStudyProps) {
                     "This is the difference between an AI experiment and an AI-enabled business program."
                   </p>
                   <Link href="/#contact">
-                     <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-full">
+                    {/* <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-full">
                       Contact for Insights
-                    </Button>  
+                    </Button>  */}
                   </Link>
                 </div>
               </div>
