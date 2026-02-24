@@ -237,9 +237,11 @@ export default function CaseStudy({ params }: CaseStudyProps) {
                   <p className="text-xs text-muted-foreground italic mb-6">
                     "This is the difference between an AI experiment and an AI-enabled business program."
                   </p>
-                  <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-full">
-                    Contact for Insights
-                  </Button>
+                  <Link href="/#contact">
+                    <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-full">
+                      Contact for Insights
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
