@@ -27,11 +27,11 @@ export function Contact() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-24">
-          <a href="https://github.com/sguptahub" target="_blank" rel="noopener noreferrer">
+          {/*} <a href="https://github.com/sguptahub" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="lg" className="rounded-full bg-white/5 border-white/10 hover:bg-white/10 hover:text-emerald-400 h-14 px-8">
               <Globe className="w-5 h-5 mr-3" /> GitHub Profile
             </Button>
-          </a>
+          </a> */}
           <a href="https://www.linkedin.com/in/sgupta78/" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="lg" className="rounded-full bg-white/5 border-white/10 hover:bg-white/10 hover:text-emerald-400 h-14 px-8">
               <Linkedin className="w-5 h-5 mr-3" /> LinkedIn Profile
