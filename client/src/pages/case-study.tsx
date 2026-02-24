@@ -117,7 +117,7 @@ const caseStudies = {
       { label: "Stack", value: "Full-stack", icon: Shield },
       { label: "Status", value: "Prod-ready", icon: CheckCircle2 }
     ],
-    challenge: "The hackathon challenge was to build a comprehensive web-based SEO and accessibility audit tool that could analyze websites for meta tags, broken links, semantic HTML structure, image alt text, and accessibility compliance — and deliver it production-ready within 8 hours using only conversational AI development (no manual coding).",
+    challenge: "The hackathon challenge was to build a comprehensive web-based SEO and accessibility audit tool that could analyze websites for meta tags, broken links, semantic HTML structure, image alt text, and accessibility compliance and deliver it production-ready within 8 hours using only conversational AI development (no manual coding).",
     role: "I used 'Vibe Coding' — a conversational development approach where requirements, architecture decisions, and implementation details are communicated to an AI coding assistant (Replit AI) entirely through natural language prompts. The AI generates all code, configuration, and infrastructure. The developer's role shifts to system design, requirement articulation, and quality validation — not typing code.",
     solution: [
       "Articulated the full system architecture through structured natural language prompts",
